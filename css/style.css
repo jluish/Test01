@@ -82,12 +82,62 @@ main table th{
 .buyBtn{
     height:35px;
     width: 207px;
-    background-color: gray;
 }
 .featInfo{
     height: 129px;
     width: 207px;
     background-color: white;
+}
+.buyBtn button{
+    border:none;
+    width:100%;
+    height: 100%;
+    font-weight: bold;
+}
+ul{
+    left:-10px;
+    position: relative;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 14px;
+}
+/*footer shtuffz*/
+footer{
+    width: 100%;
+    text-align: center;
+    height: 260px;
+}
+footer h1{
+    display: block;
+    font-size: 41px;
+}
+footer nav{
+    display: inline-table;
+    padding-bottom: 25px;
+}
+.alertInput{
+    border: 3px solid black;
+    font-weight: bold;
+    text-align: center;
+    height: 42px;
+    -webkit-text-fill-color: black;
+}
+#btnAlert{
+    height: 47px;
+    width: 172px;
+    border-top: none;
+}
+#firstName{
+    width: 211px;
+}
+#lastName{
+    width:211px;
+    border-left: none;
+}
+#eMail{
+    width: 256px;
+    border-top: none;
+    border-right: none;
 }
 /*colorz!*/
 .Gray{
