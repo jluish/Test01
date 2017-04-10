@@ -1,4 +1,5 @@
-﻿body{
+﻿
+body{
     margin: auto;
     font-family: "Roboto Condensed";
 }
@@ -55,27 +56,6 @@ header button{
     background-color: black;
     color: white;
 }
-@media screen and (min-width: 900px) {
-    #btnBuyTickets{
-        display: none;
-    }
-    header{
-        background-color: white;
-        color: black;
-        height:37px;
-        border-bottom: 3px solid black;
-    }
-    header h2{
-        font-size: 26px;
-        width:10%;
-    }
-    header button{
-        display: none;
-    }
-    .hButtons{
-        display: initial;
-    }
-}
 /*main stuff*/
 main{
     width: 100%;
@@ -85,6 +65,9 @@ main table{
     border:14px solid white;
     padding-top:100px;
     display: inline-table;
+}
+#desktopTable{
+    display: none;
 }
 main table th{
     border:7px solid white;
@@ -141,11 +124,6 @@ ul{
     font-weight: lighter;
     font-size: 14px;
 }
-@media screen and (min-width: 900px) {
-    main table{
-        visibility: hidden;
-    }
-}
 /*footer shtuffz*/
 footer{
     width: 100%;
@@ -187,30 +165,6 @@ footer p{
     width: 256px;
     border-top: none;
     border-right: none;
-}
-@media screen and (min-width: 900px) {
-    footer h1{
-        font-size: 50px;
-    }
-    footer p{
-        display: initial;
-    }
-    .alertInput{
-        border: none;
-        width: 25%;
-    }
-    #firstName{
-        border:3px solid black;
-    }
-    #btnAlert{
-        border:3px solid black;
-        border-left: none;
-        height:50px;
-    }
-    #lastName,#eMail{
-        border:3px solid black;
-        border-left: none;
-    }
 }
 /*menu (tappin' da top right button)*/
 #phantomHeader{
@@ -257,4 +211,54 @@ footer p{
 .Black{
     background-color: black;
     color:white;
+}
+/*Desktop Reolution Settings*/
+@media screen and (min-width: 900px) {
+    footer h1{
+        font-size: 50px;
+    }
+    footer p{
+        display: initial;
+    }
+    .alertInput{
+        border: none;
+        width: 25%;
+    }
+    #firstName{
+        border:3px solid black;
+    }
+    #btnAlert{
+        border:3px solid black;
+        border-left: none;
+        height:50px;
+    }
+    #lastName,#eMail{
+        border:3px solid black;
+        border-left: none;
+    }
+    #btnBuyTickets{
+        display: none;
+    }
+    header{
+        background-color: white;
+        color: black;
+        height:37px;
+        border-bottom: 3px solid black;
+    }
+    header h2{
+        font-size: 26px;
+        width:10%;
+    }
+    header button{
+        display: none;
+    }
+    .hButtons{
+        display: initial;
+    }
+    main table{
+        display: none;
+    }
+    #desktopTable{
+        display: initial;
+    }
 }
