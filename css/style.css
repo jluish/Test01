@@ -51,6 +51,9 @@ main table{
 main table th{
     border:7px solid white;
 }
+main table td{
+    border:7px solid white;
+}
 .ticketInfo .fa{
     font-size: 60px;
 }
@@ -144,6 +147,11 @@ footer nav{
     background-color: black;
     color:white;
     height:32px;
+}
+#mnbtns{
+    position: absolute;
+    top:32px;
+    width: 100%;
 }
 #menu{
     display: none;

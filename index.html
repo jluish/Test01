@@ -6,14 +6,6 @@
     <link href="css/font-awesome.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700,900" rel="stylesheet">
-    <script src="js/jquery-2.2.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#btnMenu").on("click",function(){
-                $("#menu").show();
-            });
-        });
-    </script>
 </head>  
 <body>
     <header><h2>-ING</h2>
@@ -24,13 +16,15 @@
         <header id="phantomHeader"><h2>-ING</h2>
             <button id="menuClose"><i class="fa fa-close"></i></button>     
         </header>
-        <button class="headerBtn White Black">BUY TICKETS</button>
-        <button class="headerBtn White">CREATIVE FESTIVAL 2017</button>
-        <button class="headerBtn White">PAST EVENTS</button>
-        <button class="headerBtn White">OUR STORY</button>
-        <button class="headerBtn White">FAQ</button>
-        <button class="headerBtn White">ARTISTS Q&amp;A</button>
-        <button class="headerBtn White">CONTACT</button>
+        <div id="mnbtns">
+            <button class="headerBtn White Black">BUY TICKETS</button>
+            <button class="headerBtn White">CREATIVE FESTIVAL 2017</button>
+            <button class="headerBtn White">PAST EVENTS</button>
+            <button class="headerBtn White">OUR STORY</button>
+            <button class="headerBtn White">FAQ</button>
+            <button class="headerBtn White">ARTISTS Q&amp;A</button>
+            <button class="headerBtn White">CONTACT</button>
+        </div>
     </div>
     <main>
         <table>
@@ -52,18 +46,18 @@
                 </th>
             </tr>
             <tr>
-                <th class="buyBtn"><button class="Gray"><label class="mobile">BUY TICKET</label></button></th>
-                <th class="buyBtn"><button class="Yellow"><label class="mobile">BUY TICKET</label></button></th>
+                <td class="buyBtn"><button class="Gray"><label class="mobile">BUY TICKET</label></button></td>
+                <td class="buyBtn"><button class="Yellow"><label class="mobile">BUY TICKET</label></button></td>
             </tr>
             <tr>
-                <th class="featInfo">
+                <td class="featInfo">
                     <ul>
                         <li>Creative Market</li>
                         <li>Talks (By Speakers)</li>
                         <li>1 Career Corner Session</li>
                     </ul>
-                </th>
-                <th class="featInfo">
+                </td>
+                <td class="featInfo">
                     <ul>
                         <li>Creative Market</li>
                         <li>Talks (By Speakers)</li>
@@ -72,7 +66,7 @@
                         <li>Networking Session</li>
                         <li>Goodie Bag</li>
                     </ul>
-                </th>
+                </td>
             </tr>
             <tr>
                 <th class="ticketInfo White">
@@ -92,20 +86,20 @@
                 </th>
             </tr>
             <tr>
-                <th class="buyBtn">
+                <td class="buyBtn">
                     <button class="Gray"><label class="mobile">BUY TICKET</label></button>
-                </th>
-                <th class="buyBtn">
+                </td>
+                <td class="buyBtn">
                     <button class="Black"><label class="mobile">BUY TICKET</label></button>
-                </th>
+                </td>
             </tr>
             <tr>
-                <th class="featInfo">
+                <td class="featInfo">
                     <ul>
                         <li>1 Workshop Session</li>
                     </ul>
-                </th>
-                <th class="featInfo">
+                </td>
+                <td class="featInfo">
                     <ul>
                         <li>Creative Market</li>
                         <li>Talks (By Speakers)</li>
@@ -117,7 +111,7 @@
                         <li>Listing on -ING Website</li>
                         <li>Speaker's Room Access</li>
                     </ul>
-                </th>
+                </td>
             </tr>
         </table>
     </main>
@@ -129,5 +123,18 @@
             <input type="text" id="eMail" placeholder="EMAIL" class="alertInput"/>
             <button type="submit" id="btnAlert" class="alertInput Yellow">SIGN UP</button>
     </footer>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnMenu").on("click",function(){
+                $("#menu").show();
+                $("html").css({"overflow":"hidden"});
+            });
+            $("#menuClose").on("click",function(){
+                $("#menu").hide();
+                $("html").css({"overflow":"auto"});
+            });
+        });
+    </script>
 </body>
 </html>
