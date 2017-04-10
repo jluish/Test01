@@ -66,14 +66,49 @@ main table{
     padding-top:100px;
     display: inline-table;
 }
-#desktopTable{
-    display: none;
-}
 main table th{
     border:7px solid white;
 }
 main table td{
     border:7px solid white;
+}
+#desktopTable{
+    display: none;
+    border-collapse:collapse;
+}
+#desktopTable button{
+    border: none;
+    font-weight: bold;
+    height: 40px;
+    width: 178px;
+    margin-top: 10px;
+}
+.fRow{
+    text-align: left;
+    padding-bottom: 160px;
+}
+.allTickets{
+    width: 147px;
+    float: left;
+}
+#desktopTable th{
+    border: 1px;
+    border:none !important;
+}
+#desktopTable td{
+    border: 1px;
+    border-top: 1px solid white;
+    height:46px;
+}
+#desktopTable .White, #desktopTable .Black{
+    border-top: 1px solid rgb(115,115,115);
+}
+.desc{
+    width:400px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    border:none !important;
 }
 .ticketInfo .fa{
     font-size: 60px;
