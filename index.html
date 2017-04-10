@@ -249,7 +249,15 @@
             $("#menuClose").on("click",function(){
                 $("#menu").hide();
                 $("html").css({"overflow":"auto"});
+                
             });
+            $(window).resize(function(){
+                if($(window).width()>=900){
+                    $("#menu").hide();
+                    $("html").css({"overflow":"auto"});
+                }
+            });
+
         });
     </script>
 </body>
