@@ -249,7 +249,7 @@ footer p{
     color:white;
 }
 /*Desktop Reolution Settings*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
     #menu{
         visibility: hidden;
     }
