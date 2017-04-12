@@ -1,6 +1,7 @@
 ﻿body{
     margin: auto;
     font-family: "Roboto Condensed";
+    min-width: 320px;
 }
 /*header stuff*/
 header{
@@ -75,6 +76,7 @@ main table th{
 }
 main table td{
     border:7px solid white;
+    vertical-align: top;
 }
 #desktopTable{
     display: none;
@@ -168,7 +170,6 @@ main table td{
 }
 ul{
     left:-10px;
-    position: relative;
     text-align: left;
     font-weight: lighter;
     font-size: 14px;
