@@ -64,12 +64,12 @@ header button{
 }
 /*main stuff*/
 main{
-    min-width: 320px;
-    width: 96%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
 table{
+    display: block;
     text-align: center;
     border-top: 2px solid black;
 }
@@ -97,8 +97,9 @@ table td{
 #desktopTable button{
     border: none;
     font-weight: bold;
-    height: 40px;
-    width: 178px;
+    height: 95%;
+    width: 95%;
+    font-size: 12px;
     margin-top: 10px;
 }
 .fRow{
@@ -129,33 +130,46 @@ table td{
     padding-left: 10px;
     border:none !important;
 }
-.ticketInfo .fa{
-    font-size: 60px;
+.ticketInfo i{
+    padding:10%;
+    font-size: 60px; 
+    display: block;
+}
+.ticketInfo title{
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
 }
 .price{
-    font-size: 45px;
+    /*width:100%;
+    display: inline;
+    float: right;*/
+    display: block;
+    font-size: 42px;
     font-weight: 800;
 }
+.price sup{
+    font-size: 18px;
+}
+.seal span{
+    padding-top:8px;
+    display: table-cell;
+}
 .seal{
-    position: absolute;
-    margin-left: 5px;
-    float:right;
-    margin-top: -10px;
-    width:1px;
-    border:1px solid black;
-    display:block;
-    text-align: center;
-    font-size: 7px;
-    font-weight: bold;
-    border-radius: 50%;
     width:38px;
     height:38px;
+    border:1px solid black;
+    border-radius: 50%;
+    font-size: 8px;
+    float: right;
+    overflow: hidden;
+    margin-right: 7px;
 }
 .ticketInfo{
-    height: 221px;
     width: 15%;
     background-color: yellow;
     font-size: 21px;
+    vertical-align: top;
 }
 .buyBtn{
     height:35px;
