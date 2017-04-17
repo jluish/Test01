@@ -104,10 +104,11 @@ table td{
 }
 .fRow{
     text-align: left;
-    padding-bottom: 160px;
+    padding-bottom: 23%;
 }
 .allTickets{
-    width: 12%;
+    width:28% !important;
+    height:40px !important;
     float: left;
 }
 #desktopTable th{
